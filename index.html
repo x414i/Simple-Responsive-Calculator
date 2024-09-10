@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Enter the number one:</h2>
+        <input class="num-1 txt" id="num-1" type="number" placeholder="Enter first number">
+
+        <h2>Enter the number two:</h2>
+        <input class="num-2 txt" id="num-2" type="number" placeholder="Enter second number">
+
+        <div class="button-container">
+            <button onclick="calculate('add')">Sum</button>
+            <button onclick="calculate('subtract')">Subtract</button>
+        </div>
+        <div class="button-container">
+            <button onclick="calculate('multiply')">Multiply</button>
+            <button onclick="calculate('divide')">Divide</button>
+        </div>
+
+        <h3>Result: <span class="result" id="result">0</span></h3>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
